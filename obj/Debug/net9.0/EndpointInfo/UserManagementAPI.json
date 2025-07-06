@@ -134,6 +134,10 @@
   "components": {
     "schemas": {
       "User": {
+        "required": [
+          "email",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -141,16 +145,29 @@
             "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Token: Bearer mySimpleToken",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

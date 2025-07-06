@@ -13,14 +13,23 @@ namespace UserManagementAPI.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_repo.GetAll());
+            var users = _repo.GetAll();
+
+            if (users.Count == 0)
+                return Ok(new { message = "No users found", data = users });
+
+            return Ok(users);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             var user = _repo.GetById(id);
-            if (user == null) return NotFound();
+            if (user == null) 
+            {
+                return NotFound(new { message = $"User with ID {id} not found." });
+            }
+       
             return Ok(user);
         }
 
@@ -37,11 +46,14 @@ namespace UserManagementAPI.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, User user)
         {
-            if (id != user.Id)
-                return BadRequest("User ID mismatch");
+            if (string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Email))
+                return NotFound(new { message = $"Name and Email are required" });
 
             var updated = _repo.Update(user);
-            if (!updated) return NotFound();
+            if (!updated) 
+            {
+                return NotFound(new { message = $"User with ID {id} not found." });
+            };
 
             return NoContent();
         }

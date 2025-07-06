@@ -35,3 +35,12 @@ C:\Estudos\curso-coursera\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.p
 C:\Estudos\curso-coursera\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.genruntimeconfig.cache
 C:\Estudos\curso-coursera\UserManagementAPI\obj\Debug\net9.0\ref\UserManagementAPI.dll
 C:\Estudos\curso-coursera\UserManagementAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Estudos\curso-coursera\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.sourcelink.json
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Estudos\curso-coursera\UserManagementAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
